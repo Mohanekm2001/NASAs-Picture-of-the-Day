@@ -1,6 +1,6 @@
 // Function to fetch and display the image of the current date
 function getCurrentImageOfTheDay() {
-    const apiKey = "OtNhPk7db4fP7iDOvTYhL1Om67LRtfUxrWLgDfAx";
+    const apiKey = "1OakIrMGzQ16Ay1ssHZvHCTuJUflhXuuBzwVCBgj";
     const currentDate = new Date().toISOString().slice(0, 10);
 
     fetch(`https://api.nasa.gov/planetary/apod?date=${currentDate}&api_key=${apiKey}`)
@@ -20,7 +20,7 @@ function getCurrentImageOfTheDay() {
 
 // Function to fetch and display the image for the selected date
 function getImageOfTheDay(selectedDate) {
-    const apiKey = "OtNhPk7db4fP7iDOvTYhL1Om67LRtfUxrWLgDfAx";
+    const apiKey = "1OakIrMGzQ16Ay1ssHZvHCTuJUflhXuuBzwVCBgj";
 
     fetch(`https://api.nasa.gov/planetary/apod?date=${selectedDate}&api_key=${apiKey}`)
         .then(response => response.json())
